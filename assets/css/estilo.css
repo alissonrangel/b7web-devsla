@@ -1,0 +1,270 @@
+/* VARIAVEIS */
+:root{
+  --header-color: #000;
+  --main-h1-color: #fff;
+  --main-h2-color: #aaa;
+  --btn-dark-bg: rgba(23,26,32, 0.8);
+  --btn-light-bg: rgba(255, 255, 255, 0.65);
+  --btn-dark-color: #fff;
+  --btn-kight-color: #000;
+}
+
+body{
+  font-family: Helvetica, Arial;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* HEADER */
+
+header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+header ul, header li{
+  list-style: none;
+}
+header .logo{
+  width: 120px;
+  /* margin-left: 20px; */
+}
+
+header .middle ul{
+  display: flex;
+}
+
+header .middle ul li a{
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--header-color);
+  text-transform: uppercase;
+}
+
+header .rightside ul{
+  display: flex;
+}
+
+header .rightside ul li a{
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--header-color);
+  text-transform: uppercase;
+}
+
+header .menu--icon{
+  width: 18px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+header .menu--icon div{
+  height: 2px;
+  width: 100%;
+  background-color: var(--header-color);
+  cursor: pointer;
+}
+
+.menu-lateral{
+  position: fixed;
+  display: none;
+  right: 0;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: white;
+  transition: all ease 1.4s;
+  font-weight: 100;
+  z-index: 100;
+}
+
+.display-none{
+  display: none;
+}
+.display-block{
+  display: block;
+}
+
+.menu-lateral ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.menu-lateral li a{
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+}
+.menu-lateral li{
+  margin: 20px 0;
+  color: black;
+  text-decoration: none;
+}
+.menu-lateral li hr{
+  width: 90%;
+}
+.menu-lateral .close-button{
+  font-size: 20px;
+  text-align: right;
+  margin: 15px 15px 15px 0;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+
+/* MAIN */
+main section#tipo1{
+  width: 100vw;
+  height: 100vh;  
+  background-image: url('../images/2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+main section#tipo2{
+  width: 100vw;
+  height: 100vh;  
+  background-image: url('../images/3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+main section#tipoH{
+  width: 100vw;
+  height: 100vh;  
+  background-image: url('../images/4.png');
+  background-size: cover;
+  background-position: center;
+}
+
+main .info{
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main h1{
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+  color: var(--main-h1-color);
+}
+
+main h2{
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Helvetica, Arial;
+  margin: 0;
+  color: var(--main-h2-color);
+}
+
+main h2 a{
+  color: #ddd;
+}
+
+/* FOOTER */
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+}
+footer .buttons--area{
+  display: flex;
+  justify-content: center;
+}
+
+footer .buttons--area a{
+  display: inline-block;
+  width: 220px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 8px 0;
+  margin: 0 10px;
+}
+
+footer .btn--dark{
+  background-color: var(--btn-dark-bg);
+  color: var(--btn-dark-color);
+}
+
+footer .btn--light{
+  background-color: var(--btn-light-bg);
+  color: var(--btn-light-color);
+}
+
+footer .arrow--area{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  height: 30px;
+}
+
+@keyframes arrow{
+  0%{
+    margin-top: 0;
+  }
+  25%{
+    margin-top: 15px;
+  }
+  50%{
+    margin-top: 0;
+  }
+  75%{
+    margin-top: 0;
+  }
+  100%{
+    margin-top: 0;
+  }
+}
+
+footer .arrow{
+  height: 15px;
+  animation-name: arrow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px){
+  header .middle{
+    display: none;
+  }
+  header .rightside li{
+    display: none;
+  }
+  header .rightside li.menu{
+    margin-right: 20px;
+    display: block;
+  }
+}
+
+@media (max-width: 600px){
+  footer .buttons--area{
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .buttons--area a{
+    margin: 10px 20px;
+    width: calc(100vw - 60px);
+  }
+}

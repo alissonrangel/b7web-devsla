@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Devsla</title>
+  <link rel="stylesheet" href="assets/css/estilo.css">
+  <script src="./assets/js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="leftside">
+      <a href=""><img src="assets/images/logo.png" alt="Devsla" class="logo"/></a>
+    </div>
+    <div class="middle">
+      <ul>
+        <li><a href="#tipo1">Tipo 1</a></li>
+        <li><a href="#tipo2">Tipo 2</a></li>
+        <li><a href="#tipoH">Tipo H</a></li>
+        <li><a href="">Tipo Z</a></li>
+        <li><a href="">Painel A</a></li>
+        <li><a href="">Painel C</a></li>
+      </ul>
+    </div>
+    <div class="rightside">
+      <ul>
+        <li><a href="">Store</a></li>
+        <li><a href="">Devsla Account</a></li>
+        <li class="menu">
+          <div class="menu--icon" onclick="menu_button()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="menu-lateral" id="menu-lateral">
+    <div class="close-button" onclick="close_button()">X</div>
+    <ul>
+      <li><a href="">Inventário</a><hr></li>
+      <li><a href="#tipo1">Tipo 1</a><hr></li>
+      <li><a href="#tipo2">Tipo 2</a><hr></li>
+      <li><a href="#tipoH">Tipo h</a><hr></li>
+      <li><a href="">Inventário</a><hr></li>
+      <li><a href="#tipo1">Tipo 1</a><hr></li>
+      <li><a href="#tipo2">Tipo 2</a><hr></li>
+      <li><a href="#tipoH">Tipo h</a><hr></li>
+      <li><a href="">Inventário</a><hr></li>
+      <li><a href="#tipo1">Tipo 1</a><hr></li>
+      <li><a href="#tipo2">Tipo 2</a><hr></li>
+      <li><a href="#tipoH">Tipo h</a><hr></li>        
+    </ul>
+  </div>
+  <main>
+    <section id="tipo1">
+      <div class="info">
+        <h1>Tipo 1</h1>
+        <h2>Peça o seu pelo link: <a href="">Toque para comprar</a></h2>
+      </div>
+    </section>
+    <section id="tipo2">
+      <div class="info">
+        <h1>Tipo 2</h1>
+        <h2>Peça o seu pelo link: <a href="">Toque para comprar</a></h2>
+      </div>
+    </section>
+    <section id="tipoH">
+      <div class="info">
+        <h1>Tipo H</h1>
+        <h2>Peça o seu pelo link: <a href="">Toque para comprar</a></h2>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="buttons--area">
+      <a href="" class="btn--dark">Customizar Pedido</a>
+      <a href="" class="btn--light">Inventário Existente</a>
+    </div>
+    <div class="arrow--area">
+      <img class="arrow" src="./assets/images/down.png" alt="">
+    </div>
+  </footer>
+</body>
+</html>
