@@ -75,15 +75,16 @@ header .menu--icon div{
   cursor: pointer;
 }
 
-.menu-lateral{
+#menu-lateral{
   position: fixed;
-  display: none;
-  right: 0;
+  display: block;
+  /* opacity: 0; */
+  right: -220px;
   top: 0;
   width: 220px;
   height: 100vh;
   background-color: white;
-  transition: all ease 1.4s;
+  transition: all .4s linear;
   font-weight: 100;
   z-index: 100;
 }
