@@ -34,7 +34,7 @@ header ul, header li{
   list-style: none;
 }
 header .logo{
-  width: 120px;
+  height: 20px;
   /* margin-left: 20px; */
 }
 
@@ -45,34 +45,41 @@ header .middle ul{
 header .middle ul li a{
   margin: 0 10px;
   text-decoration: none;
-  color: var(--header-color);
+  color: #ddd;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
 header .rightside ul{
   display: flex;
+  align-items: center;
 }
 
 header .rightside ul li a{
   margin: 0 10px;
   text-decoration: none;
-  color: var(--header-color);
+  color: white;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
 header .menu--icon{
-  width: 18px;
-  height: 16px;
+  width: 25px;
+  height: 20px;
+  padding: 3px;
+  border: 1px solid white;
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
 }
 
 header .menu--icon div{
   height: 2px;
   width: 100%;
-  background-color: var(--header-color);
-  cursor: pointer;
+  background-color: white;
 }
 
 #menu-lateral{
@@ -152,7 +159,7 @@ main section#tipoH{
 }
 
 main .info{
-  height: 45vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,22 +167,22 @@ main .info{
 }
 
 main h1{
-  font-size: 40px;
+  font-size: 60px;
   font-weight: normal;
-  margin: 0;
+  margin-bottom: 10px;
   color: var(--main-h1-color);
 }
 
 main h2{
-  font-size: 14px;
+  font-size: 30px;
   font-weight: normal;
   font-family: Helvetica, Arial;
   margin: 0;
-  color: var(--main-h2-color);
+  color: white;
 }
 
 main h2 a{
-  color: #ddd;
+  color: #eee;
 }
 
 /* FOOTER */
@@ -197,7 +204,7 @@ footer .buttons--area a{
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   border-radius: 20px;
   padding: 8px 0;
   margin: 0 10px;
